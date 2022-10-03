@@ -349,7 +349,7 @@ they behave more like tuples in TorchScript:
 
 **Example**
 
-The following example highlights the use of a few built-in Torchscript classes (``torch.*``):
+The following example highlights the use of a few built-in TorchScript classes (``torch.*``):
 
 ::
 
@@ -394,7 +394,7 @@ Where:
 **Compared to Python**
 
 
-TorchScript custom classes are quite limited compared to their Python counterpart. Torchscript custom classes:
+TorchScript custom classes are quite limited compared to their Python counterpart. TorchScript custom classes:
 
 * Do not support class attributes.
 * Do not support subclassing except for subclassing an interface type or object.
@@ -1280,13 +1280,13 @@ Compound Statements
 ~~~~~~~~~~~~~~~~~~~
 
 The following section describes the syntax of compound statements that are supported in TorchScript.
-The section also highlights how Torchscript differs from regular Python statements.
+The section also highlights how TorchScript differs from regular Python statements.
 It is modeled after `the compound statements chapter of the Python language reference <https://docs.python.org/3/reference/compound_stmts.html>`_.
 
 The ``if`` Statement
 ^^^^^^^^^^^^^^^^^^^^^
 
-Torchscript supports both basic ``if/else`` and ternary ``if/else``.
+TorchScript supports both basic ``if/else`` and ternary ``if/else``.
 
 Basic ``if/else`` Statement
 """"""""""""""""""""""""""""
@@ -1385,7 +1385,7 @@ The ``while`` Statement
 
     while_stmt ::=  "while" assignment_expression ":" suite
 
-`while...else` statements are not supported in Torchscript. It results in a ``RuntimeError``.
+`while...else` statements are not supported in TorchScript. It results in a ``RuntimeError``.
 
 The ``for-in`` Statement
 ^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -1395,7 +1395,7 @@ The ``for-in`` Statement
     for_stmt ::=  "for" target_list "in" expression_list ":" suite
                   ["else" ":" suite]
 
-``for...else`` statements are not supported in Torchscript. It results in a ``RuntimeError``.
+``for...else`` statements are not supported in TorchScript. It results in a ``RuntimeError``.
 
 **Example 1**
 
